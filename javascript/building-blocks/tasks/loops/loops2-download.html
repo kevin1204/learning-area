@@ -41,6 +41,14 @@
     ]
 
     // Add your code here
+    let i = 0;
+    while(i < phonebook.length){
+      if(phonebook[i].name.toLowerCase() == name.toLowerCase()) {
+        para.textContent = `${phonebook[i].name}: ${phonebook[i].number}.`;
+        break;
+      } 
+      i++;
+    }
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
